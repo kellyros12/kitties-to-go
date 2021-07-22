@@ -24,7 +24,7 @@ header {
     box-sizing: content-box;
     width: auto;
     padding: 2rem;
-    padding-left: 6rem;
+    padding-left: 15%;
     border: 0;
     margin: 0;
     background-color: rgb(44, 154, 183);
@@ -54,7 +54,7 @@ a:active {
 article {
     box-sizing: content-box;
     width: 40%;
-    padding: 0rem 0rem 0rem 6rem;
+    padding: 0 0 0 15%;
     border: 0;
     margin: 0;
     float: left;
@@ -68,7 +68,8 @@ article {
 
 aside {
     box-sizing: content-box;
-    width: 25%;
+    width: 30%;
+    padding-right: 10%;
     border: 0;
     margin: 0;
     float: right;
@@ -117,7 +118,7 @@ footer > nav > a:active {
 }
 
 nav.header {
-    padding: 2rem 0rem 2rem 6rem;
+    padding: 2rem 0 2rem 15%;
     background-color: rgb(235, 235, 235);
     font-size: 20px;
     font-weight: 600;
@@ -128,6 +129,6 @@ nav.header {
     width: 40%;
     font-size: 26px;
     color: rgb(82, 186, 215);
-    padding-left: 6rem;
+    padding-left: 15%;
     clear: left;
 }
