@@ -1,0 +1,73 @@
+body {
+    font-family: arial;
+}
+
+h1 {
+    font-size: 58.5px;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 31px;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+h3 {
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+header {
+    width: auto;
+    padding: 2rem;
+    padding-left: 6rem;
+    background-color: rgb(44, 154, 183);
+    color: white;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 6rem;
+    background-color: rgb(58, 58, 58);
+    color: white;
+
+}
+
+article {
+    padding-left: 6rem;
+}
+
+nav.header {
+    padding-left: 6rem;
+    background-color: rgb(235, 235, 235);
+    font-size: 1.5rem;
+    font-weight: 550;
+}
+
+p.quote {
+    font-size: 26px;
+    color: rgb(82, 186, 215);
+}
+
+a:link {
+    text-decoration: none;
+    color: black;
+}
+
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+a:active {
+    text-decoration: none;
+    color: black;
+}
