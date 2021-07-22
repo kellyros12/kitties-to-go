@@ -1,5 +1,6 @@
-body {
-    font-family: arial;
+* {
+    font-family: "Arial", "Broadway";
+    font-size: 17px;
 }
 
 h1 {
@@ -16,40 +17,18 @@ h2 {
 h3 {
     font-size: 24px;
     text-transform: uppercase;
+    height: 60px;
 }
 
 header {
+    box-sizing: content-box;
     width: auto;
     padding: 2rem;
     padding-left: 6rem;
+    border: 0;
+    margin: 0;
     background-color: rgb(44, 154, 183);
     color: white;
-}
-
-footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-left: 6rem;
-    background-color: rgb(58, 58, 58);
-    color: white;
-
-}
-
-article {
-    padding-left: 6rem;
-}
-
-nav.header {
-    padding-left: 6rem;
-    background-color: rgb(235, 235, 235);
-    font-size: 1.5rem;
-    font-weight: 550;
-}
-
-p.quote {
-    font-size: 26px;
-    color: rgb(82, 186, 215);
 }
 
 a:link {
@@ -70,4 +49,85 @@ a:hover {
 a:active {
     text-decoration: none;
     color: black;
+}
+
+article {
+    box-sizing: content-box;
+    width: 40%;
+    padding: 0rem 0rem 0rem 6rem;
+    border: 0;
+    margin: 0;
+    float: left;
+}
+
+.about-us {
+    width: 50%;
+    padding: 0 25% 0 25%;
+    float: none;
+}
+
+aside {
+    box-sizing: content-box;
+    width: 25%;
+    border: 0;
+    margin: 0;
+    float: right;
+    clear: right;
+}
+
+footer {
+    padding-left: 25%;
+    padding-right: 25%;
+    background-color: rgb(58, 58, 58);
+    color: white;
+    clear: both;
+}
+
+footer > img {
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+footer > nav {
+    padding: 0 25% 0 25%;
+}
+
+footer > p {
+    padding: 0 25% 0 25%;
+}
+
+footer > nav > a:link {
+    text-decoration: none;
+    color: white;
+}
+
+footer > nav > a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+footer > nav > a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+footer > nav > a:active {
+    text-decoration: none;
+    color: white;
+}
+
+nav.header {
+    padding: 2rem 0rem 2rem 6rem;
+    background-color: rgb(235, 235, 235);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.quote {
+    box-sizing: content-box;
+    width: 40%;
+    font-size: 26px;
+    color: rgb(82, 186, 215);
+    padding-left: 6rem;
+    clear: left;
 }
