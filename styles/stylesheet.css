@@ -1,6 +1,8 @@
 * {
     font-family: "Arial", "Broadway";
     font-size: 17px;
+    margin: 0;
+    padding: 0;
 }
 
 h1 {
@@ -17,7 +19,6 @@ h2 {
 h3 {
     font-size: 24px;
     text-transform: uppercase;
-    height: 60px;
 }
 
 header {
@@ -29,6 +30,14 @@ header {
     margin: 0;
     background-color: rgb(44, 154, 183);
     color: white;
+}
+
+.grid-container {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
 a:link {
@@ -51,50 +60,64 @@ a:active {
     color: black;
 }
 
-article {
-    box-sizing: content-box;
-    width: 40%;
-    padding: 0 0 0 15%;
-    border: 0;
-    margin: 0;
-    float: left;
+header {
+    grid-column: 1 / 7;
+    grid-row: 1 / 2;
 }
 
-.about-us {
-    width: 50%;
-    padding: 0 25% 0 25%;
-    float: none;
+nav {
+    grid-column: 1 / 7;
+    grid-row: 2 / 3;
+    background-color: rgb(235, 235, 235);
+    font-size: 20px;
+    font-weight: 600;
+    padding: 2rem 0 2rem 15%;
 }
 
-aside {
-    box-sizing: content-box;
-    width: 30%;
-    padding-right: 10%;
-    border: 0;
-    margin: 0;
-    float: right;
-    clear: right;
+.information {
+    grid-column: 2 / 4;
+    grid-row: 3 / 4;
+}
+
+.quote {
+    grid-column: 2 / 4;
+    grid-row: 4 / 5;
+    justify-self: center;
+    align-self: center;
+    font-size: 26px;
+    color: rgb(82, 186, 215);
+}
+
+.news {
+    grid-column: 5 / 6;
+    grid-row: 3 / 4;
+}
+
+.cotw {
+    grid-column: 5 / 6;
+    grid-row: 4 / 5;
+}
+
+.story {
+    grid-column: 2 / 4;
+    grid-row: 5 / 6;
+}
+
+.grid-row-item {
+    display: grid;
+    background-color: rgb(58, 58, 58);
+    grid-column: 1 / 7;
+    grid-row: 6 / 7;
+    justify-content: center;
 }
 
 footer {
-    padding-left: 25%;
-    padding-right: 25%;
-    background-color: rgb(58, 58, 58);
     color: white;
-    clear: both;
-}
-
-footer > img {
-    padding-left: 25%;
-    padding-right: 25%;
 }
 
 footer > nav {
-    padding: 0 25% 0 25%;
-}
-
-footer > p {
-    padding: 0 25% 0 25%;
+    background-color: rgb(58, 58, 58);
+    padding: 0 0 0 0;
 }
 
 footer > nav > a:link {
@@ -117,18 +140,11 @@ footer > nav > a:active {
     color: white;
 }
 
-nav.header {
-    padding: 2rem 0 2rem 15%;
-    background-color: rgb(235, 235, 235);
-    font-size: 20px;
-    font-weight: 600;
-}
 
-.quote {
-    box-sizing: content-box;
-    width: 40%;
-    font-size: 26px;
-    color: rgb(82, 186, 215);
-    padding-left: 15%;
-    clear: left;
+.about-us {
+    grid-column: 2 / 6;
+    grid-row: 3 / 4;
+    align-self: center;
+    justify-self: center;
+    padding: 2% 2% 2% 10%
 }
