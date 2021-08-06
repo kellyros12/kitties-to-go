@@ -77,6 +77,7 @@ nav {
 .information {
     grid-column: 2 / 4;
     grid-row: 3 / 4;
+    padding-bottom: 5px;
 }
 
 .quote {
@@ -86,11 +87,13 @@ nav {
     align-self: center;
     font-size: 26px;
     color: rgb(82, 186, 215);
+    padding: 10px 0 10px 0;
 }
 
 .news {
     grid-column: 5 / 6;
     grid-row: 3 / 4;
+    padding-bottom: 5px;
 }
 
 .cotw {
@@ -101,6 +104,7 @@ nav {
 .story {
     grid-column: 2 / 4;
     grid-row: 5 / 6;
+    padding-bottom: 5px;
 }
 
 .grid-row-item {
@@ -113,6 +117,7 @@ nav {
 
 footer {
     color: white;
+    padding: 5px 0 5px 0;
 }
 
 footer > nav {
