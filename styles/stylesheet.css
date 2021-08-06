@@ -24,11 +24,8 @@ h3 {
 header {
     box-sizing: content-box;
     width: auto;
-    padding: 2rem;
     padding-left: 15%;
-    border: 0;
-    margin: 0;
-    background-color: rgb(44, 154, 183);
+    background-color: #258096;
     color: white;
 }
 
@@ -38,6 +35,8 @@ header {
     height: 100vh;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin: 0;
+    padding: 0;
 }
 
 a:link {
@@ -63,6 +62,7 @@ a:active {
 header {
     grid-column: 1 / 7;
     grid-row: 1 / 2;
+    height: 103px;
 }
 
 nav {
@@ -72,12 +72,18 @@ nav {
     font-size: 20px;
     font-weight: 600;
     padding: 2rem 0 2rem 15%;
+    height: 23px;
+}
+
+nav a {
+    padding: .5rem;
+    margin: .5rem;
 }
 
 .information {
     grid-column: 2 / 4;
     grid-row: 3 / 4;
-    padding-bottom: 5px;
+    padding-top: 5px;
 }
 
 .quote {
@@ -86,7 +92,7 @@ nav {
     justify-self: center;
     align-self: center;
     font-size: 26px;
-    color: rgb(82, 186, 215);
+    color: rgb(36, 127, 153);
     padding: 10px 0 10px 0;
 }
 
@@ -94,11 +100,13 @@ nav {
     grid-column: 5 / 6;
     grid-row: 3 / 4;
     padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .cotw {
     grid-column: 5 / 6;
     grid-row: 4 / 5;
+    padding-top: 5px;
 }
 
 .story {
@@ -151,5 +159,5 @@ footer > nav > a:active {
     grid-row: 3 / 4;
     align-self: center;
     justify-self: center;
-    padding: 2% 2% 2% 10%
+    padding: 0 2% 2% 10%;
 }
